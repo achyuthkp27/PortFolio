@@ -1,0 +1,313 @@
+.skills{
+    background: linear-gradient(to right, #11998e, #38ef7d );
+    height: 250vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    column-gap: 40px;
+    margin:0;
+    padding:0;
+}
+.skills .refl h1{
+    margin:0;
+    padding:0;
+    position: absolute;
+    left:-20%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    color: #000;
+    text-transform:uppercase;
+    font-size: 15em;
+    transform: rotate(-90deg);
+}
+.article h1{
+    margin:0;
+    padding:0;
+    position: absolute;
+    right:-10%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+    color: #000;
+    text-transform:uppercase;
+    font-size: 10em;
+    transform: rotate(90deg);
+}
+.skills .refl h1:before,
+.article h1:before{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    transform-origin:bottom;
+    transform: rotateX(180deg);
+    line-height: 0.865em;
+    background: linear-gradient(0deg,#000 0,transparent 80%);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity:0.5;
+}
+
+.article{
+    background: radial-gradient(#03a9f4,#004b6d);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    column-gap: 40px;
+    margin:0;
+    padding:0;
+}
+
+.wrapping{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80rem;
+    margin-top: 84px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left:20%;
+    top:0;
+}
+
+  .colss{
+    display: -webkit-box;   
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+      
+  }
+  
+  .colo{
+    width: calc(20% - 2rem);
+    margin: 2rem;
+    cursor: pointer;
+    margin-left: -5px;
+    margin-bottom: -5px;
+  }
+  
+  .containerr{
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .frontt,
+  .backk{
+    background-size: cover;
+    background-position: center; 
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+    backface-visibility: hidden;
+    text-align: center;
+    min-height: 160px;
+    height: auto; 
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .backk{
+    background: #fff;  
+    background: linear-gradient(45deg,  #000046 0%,#1CB5E0 100%);
+  }
+  
+  .frontt:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    backface-visibility: hidden;
+  }
+  .containerr:hover .frontt,
+  .containerr:hover .backk{
+    transition: transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  }
+  
+  .backk{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .innerr{
+    transform: translateY(-50%) translateZ(60px) scale(0.94);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 2rem;     
+    box-sizing: border-box;
+    outline: 1px solid transparent;     
+    perspective: inherit;
+    z-index: 2;
+  }
+  
+  .containerr .backk{    
+    transform: rotateY(180deg);     
+    transform-style: preserve-3d;
+  }
+  
+  .containerr .frontt{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .containerr:hover .backk{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .containerr:hover .frontt{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+  }
+  
+  .frontt .innerr p{
+    font-size: 1em;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .frontt .innerr p:after{
+    content: '';
+    width: 4rem;
+    height: 2px;
+    position: absolute;
+    background: #fff;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -.75rem;
+  }
+  
+  .frontt .innerr span{
+    color: fff;   
+    font-family: 'Roboto Condensed', sans-serif;   
+    font-weight: 300;
+  }
+  
+  @media screen and (max-width: 64rem){
+    .colo{
+      width: calc(33.333333% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 48rem){
+    .colo{
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media screen and (max-width: 32rem){
+    .colo{
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  .artcontainer{
+    position: relative;
+    left: -10%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+  .artcontainer .artcard{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+  }
+  .artcontainer .artcard:hover{
+    height: 420px;
+  }
+  .artcontainer .artcard .artimgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left:20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+  }
+  .artcontainer .artcard .artimgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  .artcontainer .artcard .artcontent{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .artcontainer .artcard:hover .artcontent{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  .artcontainer .artcard .artcontent a:hover{
+  color: cyan;
+  }
+
+.skills .otherss{
+  position: absolute;
+  border-radius: 20px;
+  background: linear-gradient(to right,#00b4db, #0083b0);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  width: 85%;
+  height:40%;
+  padding: 0;
+  margin: 0;
+  bottom:-55%;
+  left:10%;
+}
+.skills .otherss h2,
+.skills .lastone h2{
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  font-size: 2em;
+}
+.skills .otherss .continental,
+.skills .lastone .continental{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  padding: 20px;
+  column-gap: 35px;
+}
+.skills .lastone{
+  background:linear-gradient(to right, #00b4db, #0083b0);
+  border-radius: 200px 0px 200px 0px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  width: 60%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  bottom: 5%;
+}

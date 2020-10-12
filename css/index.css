@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@font-face {
+    font-family: dock11;
+    src: url(img/heavy_dock11.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+.wholepage{
+    animation: transitionIN 5s;
+    background: #000;
+}
+@keyframes transitionIN{
+    from{
+        opacity: 0;
+        transform: rotateX(-20deg);
+        transform: rotateY(-20deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+        transform: rotateY(0);
+    }
+}
+body {
+    background-color: black;
+    animation: transitionIN 0.75s;
+}
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+.ban{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    color: linear-gradient( to right, rgba(196, 83, 31, 0.6), rgba(109, 179, 242, 0.6));
+    clip-path: circle(0px at center);
+}
+.layer {
+    background-image: linear-gradient( to right, rgba(196, 83, 31, 0.6), rgba(109, 179, 242, 0.6));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    position: relative;
+    margin-top: 200vh;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.container h2{
+    cursor: pointer;
+}
+
+.star {
+    color: #6ab04c;
+    letter-spacing: 5px;
+    position: relative;
+    margin-top: 200px;
+    top: 0;
+    left: 0;
+    margin-left: 5vh;
+    font-size: 40px;
+}
+
+.port {
+    margin: 3vh 5vh;
+    color: white;
+    font-family: Charcoal, sans-serif;
+}
+
+.port1 {
+    font-weight: bolder;
+    color: #6ab04c;
+    font-family: Charcoal, sans-serif;
+}
+
+.start {
+    color: white;
+    font-size: 5em;
+    letter-spacing: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+}
+
+.text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.ul-class1 ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: all 0.4s;
+}
+
+.ul-class1 ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+    background: #000;
+}
+
+.ul-class1 ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.ul-class1 ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+.ul-class1 ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+}
+
+.ul-class1 ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+}
+
+.ul-class1 ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+}
+
+.ul-class1 ul li:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+}
+
+.ul-class1 ul li:nth-child(1) span {
+    background: #3b5999;
+    animation: aa 3s;
+}
+
+.ul-class1 ul li:nth-child(2) span {
+    background: #55acee;
+    animation: ab 3s;
+}
+
+.ul-class1 ul li:nth-child(3) span {
+    background: #db4b39;
+    animation: ac 3s;
+}
+
+.ul-class1 ul li:nth-child(5) span {
+    background: #e4405f;
+    animation: ad 3s;
+}
+
+.ul-class1 ul li:nth-child(4) span {
+    background: #0077b5;
+    animation: ae 3s;
+}
+
+.ul-class1 ul li:nth-child(6) span {
+    background: #1f1f1f;
+    animation: af 3s;
+}
+
+@keyframes aa {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+}
+
+@keyframes ab {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes ac {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+}
+
+@keyframes ae {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes ad {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes af {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+}
+
+.to-top {
+    background: crimson;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.to-top.crim {
+    bottom: 32px;
+    pointer-events: auto;
+    background: #55acee;
+    opacity: 1;
+}
+
+.ul-class1 ul.act {
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.home {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.btnn a{
+    position: absolute;
+    height:20%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15px;
+    color:#262626;
+    padding:5px 15px;
+    border: 2px solid #262626;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: .5s;
+    overflow: hidden;
+}
+.btnn span{
+    position: relative;
+    bottom: 50%;
+}
+.btnn a:before,
+.btnn a:after,
+.btnn span:before,
+.btnn span:after{
+content: '';
+position: absolute;
+width: 30%;
+height:100%;
+background: #262626;
+z-index: -1;
+transition: .5s;
+}
+.btnn a:before{
+    top:0;
+    left:-26%;
+}
+.btnn a:hover:before{
+    top:0;
+    left:0;
+}
+.btnn a:after{
+    top:0;
+    right:-26%;
+}
+.btnn a:hover:after{
+    top:0;
+    right:0;
+}
+.btnn span:before{
+    bottom:-100%;
+    left:25%;
+}
+.btnn a:hover span:before{
+    bottom:0;
+    left:25%;
+}
+.btnn span:after{
+    top:-100%;
+    left:50%
+}
+.btnn a:hover span:after{
+    top:0;
+    left:50%
+}
+.btnn a:hover{
+    color: #fff;
+}

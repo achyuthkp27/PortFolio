@@ -1,0 +1,142 @@
+.foo{
+    position: relative;
+    height: 42vh;
+    width: 100%;
+    color: #ccc;
+    background-color: #111;
+}
+footer{
+    padding: 0;
+    bottom: 0;
+    display: flex ;
+}
+footer .main-content{
+    display: flex;
+}
+footer .main-content .box{
+    flex-basis: 50%;
+    padding: 10px 150px;
+}
+footer .box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+footer .box .content{
+    margin:20px 0 0 0;
+
+}
+footer .box .content:before{
+    position: absolute;
+    content: '';
+    left:100px;
+    height: 2px;
+    background: #1a1a1a;
+}
+footer .box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: crimson;
+    top:40px;
+}
+footer .left .content .social{
+    margin: 20px 0 0 0;
+}
+footer .left .content p{
+    text-align: justify;
+}
+footer .left .content .social a{
+    padding: 0 2px;
+}
+footer .left .content .social a span{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ccc;
+    font-size: 25px;
+    border-radius: 5px;
+    transition: .3s;
+}
+footer .left .content .social a span:hover{
+    background:crimson;
+}
+
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding: 5px;
+}
+.center .content .phone{
+    margin: 15px 0;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-top: 30px;
+    margin-bottom: 2px;
+    color: #656565;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: crimson;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.right form .btn button:hover{
+    background: #000;
+}
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: crimson;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+    footer{
+    position: relative;
+    bottom: 0px;
+    }
+    .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+    .main-content .box{
+    margin: 5px 0;
+    }
+}

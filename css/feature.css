@@ -1,0 +1,191 @@
+.feature{
+    position: relative;
+    height: 250vh;
+    width: 100%;
+    background: #262626;
+	font-family: verdana;
+}
+
+.feature .box
+{
+	position: absolute;
+	top: 15%;
+	right:0;
+	transform: translate(-50%,-50%);
+	width: 550px;
+	height: 400px;
+	background: #262626;
+	box-sizing: border-box;
+	padding: 15px;
+	transition: .5s;
+	overflow: hidden;
+}
+.feature p
+{
+    margin: 0;
+    padding: 0;
+	color: #fff;
+	font-size: 20px;
+	transition: .5s;
+	transition-delay: .5s;
+	transform: scale(.8);
+}
+.feature .box:before,
+.feature .box3:before,
+.feature .box1:before,
+.feature .box2:before
+{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	top: 0;
+	left: 0;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	opacity: 0;
+	transition: .5s;
+	box-sizing: border-box;
+}
+.feature .box:after,
+.feature .box3:after,
+.feature .box1:after,
+.feature .box2:after
+{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	bottom: 0;
+	right: 0;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	opacity: 0;
+	transition: .5s;
+	box-sizing: border-box;
+}
+.feature .box:hover:before,
+.feature .box3:hover:before,
+.feature .box1:hover:before,
+.feature .box2:hover:before
+{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.feature .box:hover:after,
+.feature .box3:hover:after,
+.feature .box1:hover:after,
+.feature .box2:hover:after
+{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.feature .box:hover p,
+.feature .box3:hover p,
+.feature .box1:hover p,
+.feature .box2:hover p
+{
+	transform: scale(1);
+}
+.feature .box:hover,
+.feature .box3:hover,
+.feature .box1:hover,
+.feature .box2:hover
+{
+	box-shadow:  0 25px 30px rgba(0,0,0,.5);
+}
+.feature span
+{
+	position: absolute;
+	top: 0;
+	left: -120%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,.2);
+	transition: .5s;
+	transition-delay: 1s;
+	transform: skewX(5deg);
+}
+.feature .box:hover span,
+.feature .box3:hover span
+.feature .box1:hover span,
+.feature .box2:hover span
+{
+	left: 120%;
+}
+.feature .pro1 img{
+    position: absolute;
+    top:5%;
+	left: 3%;
+	border: solid black;
+}
+
+.feature .box1
+{
+	position: absolute;
+	top: 37%;
+	left:25%;
+	transform: translate(-50%,-50%);
+	width: 550px;
+	height: 400px;
+	background: #262626;
+	box-sizing: border-box;
+	padding: 15px;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.feature .pro2 img{
+    position: absolute;
+    top:27%;
+	right: 5%;
+	border: solid black;
+}
+
+.feature .box2
+{
+	position: absolute;
+	top: 65%;
+	right:0;
+	transform: translate(-50%,-50%);
+	width: 550px;
+	height: 400px;
+	background: #262626;
+	box-sizing: border-box;
+	padding: 15px;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.feature .pro3 img{
+    position: absolute;
+    top:55%;
+	left: 3%;
+	border: solid black;
+}
+
+.feature .box3
+{
+	position: absolute;
+	top: 89%;
+	left:25%;
+	transform: translate(-50%,-50%);
+	width: 550px;
+	height: 400px;
+	background: #262626;
+	box-sizing: border-box;
+	padding: 15px;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.feature .pro4 img{
+    position: absolute;
+    top:78%;
+	right: 5%;
+	border: solid black;
+}
+
+
